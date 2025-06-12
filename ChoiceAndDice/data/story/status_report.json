@@ -1,0 +1,16 @@
+{
+    "id": "status_report",
+    "text": "상태 보고서를 확인해보니 엔진의 냉각 시스템에 문제가 있는 것으로 나타났습니다. 빠른 조치가 필요해 보입니다.",
+    "choices": [
+        {
+            "id": "go_engine",
+            "text": "엔진실로 이동한다",
+            "next": "engine_room"
+        },
+        {
+            "id": "send_engineer",
+            "text": "엔지니어를 보낸다",
+            "next": "sleep_consequence"
+        }
+    ]
+} 

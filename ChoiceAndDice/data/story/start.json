@@ -1,0 +1,16 @@
+{
+    "id": "start",
+    "text": "당신은 우주선의 선장입니다. 긴 항해 중 갑자기 엔진실에서 경고음이 울립니다.",
+    "choices": [
+        {
+            "id": "check_engine",
+            "text": "엔진실로 가서 확인한다",
+            "next": "engine_room"
+        },
+        {
+            "id": "check_status",
+            "text": "상태 보고서를 확인한다",
+            "next": "status_report"
+        }
+    ]
+} 

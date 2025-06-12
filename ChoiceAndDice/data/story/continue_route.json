@@ -1,0 +1,16 @@
+{
+    "id": "continue_route",
+    "text": "모든 시스템이 정상적으로 작동하고 있습니다. 계획된 항로를 따라 항해를 계속합니다.",
+    "choices": [
+        {
+            "id": "check_surroundings",
+            "text": "주변 우주를 탐색한다",
+            "next": "distress_signal"
+        },
+        {
+            "id": "rest",
+            "text": "잠시 휴식을 취한다",
+            "next": "start"
+        }
+    ]
+} 

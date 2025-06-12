@@ -1,0 +1,22 @@
+{
+    "id": "engine_room",
+    "text": "엔진실에 도착했습니다. 냉각 시스템에 문제가 있는 것 같습니다. 과열 경고가 계속해서 울리고 있습니다.",
+    "choices": [
+        {
+            "id": "fix_cooling",
+            "text": "냉각 시스템을 수리한다",
+            "next": "cooling_fix",
+            "conditions": {
+                "stat_check": {
+                    "type": "intelligence",
+                    "value": 12
+                }
+            }
+        },
+        {
+            "id": "wait_engineer",
+            "text": "엔지니어를 기다린다",
+            "next": "sleep_consequence"
+        }
+    ]
+} 

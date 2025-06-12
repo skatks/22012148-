@@ -1,0 +1,22 @@
+{
+    "id": "sleep_consequence",
+    "text": "엔지니어를 기다리는 동안 시간이 흘렀습니다. 엔진의 상태가 더욱 악화되었고, 이제는 수리가 더 어려워졌습니다.",
+    "choices": [
+        {
+            "id": "try_repair",
+            "text": "직접 수리를 시도한다",
+            "next": "cooling_fix",
+            "conditions": {
+                "stat_check": {
+                    "type": "intelligence",
+                    "value": 15
+                }
+            }
+        },
+        {
+            "id": "send_distress",
+            "text": "구조 신호를 보낸다",
+            "next": "distress_signal"
+        }
+    ]
+} 

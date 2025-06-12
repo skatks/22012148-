@@ -1,0 +1,29 @@
+{
+  "nodes": {
+    "start": {
+      "text": "당신은 폐허가 된 우주정거장에 도착했습니다. 무엇을 하시겠습니까?",
+      "choices": [
+        {
+          "id": "investigate",
+          "text": "주위를 탐색한다",
+          "next": "investigate_result",
+          "dice_check": true,
+          "stat_requirement": 3
+        },
+        {
+          "id": "ignore",
+          "text": "무시하고 지나친다",
+          "next": "walk_away"
+        }
+      ]
+    },
+    "investigate_result": {
+      "text": "탐색 결과에 따라 무언가를 발견하거나 아무것도 찾지 못할 수 있습니다.",
+      "choices": []
+    },
+    "walk_away": {
+      "text": "당신은 그냥 지나쳤습니다. 아무 일도 일어나지 않습니다.",
+      "choices": []
+    }
+  }
+}

@@ -1,0 +1,12 @@
+res://scenes/CompanionUI.tscn::7154c7bf2e6634320fe4bd473b426925::1749731494::res://.godot/exported/133200997/export-9bb37b13e7738817f8fce47cc3a2a6e6-CompanionUI.scn
+res://scenes/DiceResultPopup.tscn::7cd53184c4272f5b0750395e85ca27a4::1749569595::res://.godot/exported/133200997/export-afd6cfaee580e0e2402c5f9ecc4582c5-DiceResultPopup.scn
+res://scenes/GameUI.tscn::aa3e5fb435b87aa4f49fd01443b0283f::1749569595::res://.godot/exported/133200997/export-c94769d5153a40e9b00d2c31e6573e1e-GameUI.scn
+res://scenes/InventoryUI.tscn::cbb003415fdcd17369c8ec9c998e882f::1749730891::res://.godot/exported/133200997/export-db8e4a10be7f0120d20a822a4daf66f3-InventoryUI.scn
+res://scenes/MainGame.tscn::d63ec55cf8402a46ae0f41fb5cda0fc3::1749733070::res://.godot/exported/133200997/export-dbfc6818b022d976e0e33ac4dabecd4c-MainGame.scn
+res://scenes/MainMenu.tscn::ad9bc0191331df092a5ed6b79339019f::1749569595::res://.godot/exported/133200997/export-23c8b2a48d59a0cd018bd8ad5ce7794c-MainMenu.scn
+res://scenes/main_game.tscn::b83ec23f0c12c216251320684b7de432::1749733118::res://.godot/exported/133200997/export-3a689a07f84009fde038ac878f1ae44a-main_game.scn
+res://scenes/save_load_menu.tscn::a2930de5cdf00ddc5ff9fadd63c58c26::1749569595::res://.godot/exported/133200997/export-2273e35e87d6216f02248883e7a33338-save_load_menu.scn
+res://scenes/SettingsMenu.tscn::aa1dfd6c25292189d692ad518412f11c::1749732680::res://.godot/exported/133200997/export-15cbdd73a865808cff2ee94b4161828c-SettingsMenu.scn
+res://scenes/settings_menu.tscn::7bf6215c91ce31ad5ab84ae0aa02fc56::1749569595::res://.godot/exported/133200997/export-8b57c6bc760461035449d3426e587698-settings_menu.scn
+res://scenes/TitleScreen.tscn::57ac5b18c2382c0964db4ee08b0b8a13::1749731500::res://.godot/exported/133200997/export-6fe91e769d056a639faff0a4dc2cf1e1-TitleScreen.scn
+res://scenes/title_screen.tscn::d30df6fbdb05d9d42e625d64523570d4::1749569595::res://.godot/exported/133200997/export-c315eff7b5f8a8ce1d6c4c72650ddc19-title_screen.scn

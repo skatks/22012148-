@@ -1,0 +1,83 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6pj8w7yoyo5v"]
+
+[ext_resource type="Script" path="res://scripts/main_game.gd" id="1_8k2xm"]
+[ext_resource type="PackedScene" uid="uid://dj4hqxkm8yagg" path="res://scenes/InventoryUI.tscn" id="2_yvn4k"]
+[ext_resource type="PackedScene" uid="uid://c8q6j4k7n3bxd" path="res://scenes/CompanionUI.tscn" id="3_8k2xm"]
+[ext_resource type="PackedScene" uid="uid://c3cfj5n5yt2ni" path="res://scenes/SettingsMenu.tscn" id="4_yvn4k"]
+
+[node name="MainGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8k2xm")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="StoryText" type="RichTextLabel" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "게임을 시작하는 중..."
+
+[node name="DiceResultLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="ChoicesContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="MobileButtons" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="InventoryButton" type="Button" parent="MarginContainer/VBoxContainer/MobileButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "인벤토리"
+
+[node name="CompanionButton" type="Button" parent="MarginContainer/VBoxContainer/MobileButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "동료"
+
+[node name="MenuButton" type="Button" parent="MarginContainer/VBoxContainer/MobileButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "메뉴"
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="InventorySystem" parent="UILayer" instance=ExtResource("2_yvn4k")]
+unique_name_in_owner = true
+visible = false
+
+[node name="CompanionSystem" parent="UILayer" instance=ExtResource("3_8k2xm")]
+unique_name_in_owner = true
+visible = false
+
+[node name="SettingsMenu" parent="UILayer" instance=ExtResource("4_yvn4k")]
+unique_name_in_owner = true
+visible = false 

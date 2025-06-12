@@ -1,0 +1,78 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4uy8se6emv8r"]
+
+[ext_resource type="Script" uid="uid://2444txn1amym" path="res://scripts/main_game.gd" id="1_rjnvw"]
+[ext_resource type="PackedScene" uid="uid://dj4hqxkm8yagg" path="res://scenes/InventoryUI.tscn" id="2_u3kv8"]
+[ext_resource type="PackedScene" uid="uid://c8q6j4k7n3bxd" path="res://scenes/CompanionUI.tscn" id="3_y2p4m"]
+[ext_resource type="PackedScene" uid="uid://b6q7v1oqfg0kx" path="res://scenes/SettingsMenu.tscn" id="4_k8p2m"]
+
+[node name="MainGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rjnvw")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="StoryText" type="RichTextLabel" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "게임을 초기화하는 중..."
+
+[node name="DiceResultLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "주사위 결과"
+horizontal_alignment = 1
+
+[node name="ChoicesContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="MobileButtons" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="InventoryButton" type="Button" parent="MarginContainer/VBoxContainer/MobileButtons"]
+custom_minimum_size = Vector2(120, 50)
+layout_mode = 2
+text = "인벤토리"
+
+[node name="CompanionButton" type="Button" parent="MarginContainer/VBoxContainer/MobileButtons"]
+custom_minimum_size = Vector2(120, 50)
+layout_mode = 2
+text = "동료"
+
+[node name="MenuButton" type="Button" parent="MarginContainer/VBoxContainer/MobileButtons"]
+custom_minimum_size = Vector2(120, 50)
+layout_mode = 2
+text = "메뉴"
+
+[node name="SettingsMenu" parent="." instance=ExtResource("4_k8p2m")]
+visible = false
+layout_mode = 1
+
+[node name="InventorySystem" parent="." instance=ExtResource("2_u3kv8")]
+visible = false
+layout_mode = 1
+
+[node name="CompanionSystem" parent="." instance=ExtResource("3_y2p4m")]
+visible = false
+layout_mode = 1

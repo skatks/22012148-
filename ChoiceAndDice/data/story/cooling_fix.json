@@ -1,0 +1,16 @@
+{
+    "id": "cooling_fix",
+    "text": "당신은 냉각 시스템의 문제를 성공적으로 해결했습니다. 엔진의 온도가 정상으로 돌아왔습니다.",
+    "choices": [
+        {
+            "id": "continue_journey",
+            "text": "항해를 계속한다",
+            "next": "continue_route"
+        },
+        {
+            "id": "check_distress",
+            "text": "주변 우주선의 구조 신호를 확인한다",
+            "next": "distress_signal"
+        }
+    ]
+} 

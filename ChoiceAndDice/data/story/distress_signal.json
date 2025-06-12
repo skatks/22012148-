@@ -1,0 +1,22 @@
+{
+    "id": "distress_signal",
+    "text": "근처에서 다른 우주선의 구조 신호를 감지했습니다. 그들도 엔진 문제를 겪고 있는 것 같습니다.",
+    "choices": [
+        {
+            "id": "help_others",
+            "text": "구조를 돕는다",
+            "next": "start",
+            "conditions": {
+                "stat_check": {
+                    "type": "charisma",
+                    "value": 12
+                }
+            }
+        },
+        {
+            "id": "ignore_signal",
+            "text": "무시하고 항해를 계속한다",
+            "next": "continue_route"
+        }
+    ]
+} 

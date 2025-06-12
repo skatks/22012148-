@@ -1,0 +1,3 @@
+res://scenes/main_game.tscn
+res://scripts/settings_menu.gd
+res://scripts/main_game.gd
